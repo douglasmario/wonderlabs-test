@@ -1,0 +1,20 @@
+<!-- Team item -->
+
+  <div class="card bg-white rounded shadow-sm pt-0 px-0 pb-4">
+    <div class="card-bg rounded-top">
+      <span class="bg" [ngStyle]="{ 'background-image': 'url(' + avatar + ')'}"></span>
+
+    </div>
+    <span class="avatar img-fluid rounded-circle img-thumbnail shadow-sm" [ngStyle]="{ 'background-image': 'url(' + avatar + ')'}">
+
+    </span>
+
+     <h5 class=" mt-2 mb-0">{{firstName}} {{lastName}}</h5>
+    <span class="small text-uppercase text-muted mt-1">{{email}}</span>
+    <ul class="social mb-0 list-inline mt-3">
+      <li class="list-inline-item"><a class="text-muted"><i class="fa fa-facebook-f"></i></a></li>
+      <li class="list-inline-item"><a class="text-muted"><i class="fa fa-twitter"></i></a></li>
+      <li class="list-inline-item"><a class="text-muted"><i class="fa fa-instagram"></i></a></li>
+      <li class="list-inline-item"><a class="text-muted"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>

@@ -1,0 +1,16 @@
+@import '../../../assets/scss/variables';
+
+#page-title{
+  background: url("/assets/images/dark-bg.jpg") no-repeat 0 45%;
+  background-size: cover;
+  min-height: 200px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  place-content: flex-end space-between;
+  align-items: flex-end;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  .container{
+    color: $white;
+  }
+}
