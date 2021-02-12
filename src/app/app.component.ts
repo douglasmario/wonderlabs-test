@@ -8,7 +8,6 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
   animations: [
 
     // Trigger animation cards array

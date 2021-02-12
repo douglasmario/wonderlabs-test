@@ -1,17 +1,12 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { SimpleSmoothScrollService } from 'ng2-simple-smooth-scroll';
 
-
 @Component({
   selector: 'app-pagination',
-  templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.scss']
+  templateUrl: './pagination.component.html'
 })
 export class PaginationComponent implements OnInit {
 
-  /**
-   *
-   */
   @Input()
   set totalPages(value: number) {
     const pages = Array(value);

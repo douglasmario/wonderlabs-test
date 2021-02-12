@@ -1,22 +1,20 @@
 import { Inject, Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { retry, catchError, map, shareReplay } from 'rxjs/operators';
+import { retry, catchError, shareReplay } from 'rxjs/operators';
 import { User } from '../models/user';
 import { ResponseWrapper } from '../models/response-wrapper';
-
-// TODO Move to Injectable
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  url = `${environment.api.base}users/`;
+  url = `${this.environment.api.base}users/`;
 
   constructor(
     private httpClient: HttpClient,
+    @Inject('environment') private environment: any
   ) { }
 
   httpOptions = {
